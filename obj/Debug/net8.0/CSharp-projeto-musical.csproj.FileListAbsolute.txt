@@ -1,0 +1,14 @@
+C:\CSharp-projeto-musical\bin\Debug\net8.0\CSharp-projeto-musical.exe
+C:\CSharp-projeto-musical\bin\Debug\net8.0\CSharp-projeto-musical.deps.json
+C:\CSharp-projeto-musical\bin\Debug\net8.0\CSharp-projeto-musical.runtimeconfig.json
+C:\CSharp-projeto-musical\bin\Debug\net8.0\CSharp-projeto-musical.dll
+C:\CSharp-projeto-musical\bin\Debug\net8.0\CSharp-projeto-musical.pdb
+C:\CSharp-projeto-musical\obj\Debug\net8.0\CSharp-projeto-musical.GeneratedMSBuildEditorConfig.editorconfig
+C:\CSharp-projeto-musical\obj\Debug\net8.0\CSharp-projeto-musical.AssemblyInfoInputs.cache
+C:\CSharp-projeto-musical\obj\Debug\net8.0\CSharp-projeto-musical.AssemblyInfo.cs
+C:\CSharp-projeto-musical\obj\Debug\net8.0\CSharp-projeto-musical.csproj.CoreCompileInputs.cache
+C:\CSharp-projeto-musical\obj\Debug\net8.0\CSharp-projeto-musical.dll
+C:\CSharp-projeto-musical\obj\Debug\net8.0\refint\CSharp-projeto-musical.dll
+C:\CSharp-projeto-musical\obj\Debug\net8.0\CSharp-projeto-musical.pdb
+C:\CSharp-projeto-musical\obj\Debug\net8.0\CSharp-projeto-musical.genruntimeconfig.cache
+C:\CSharp-projeto-musical\obj\Debug\net8.0\ref\CSharp-projeto-musical.dll
