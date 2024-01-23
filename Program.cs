@@ -7,6 +7,7 @@ String mensagemDeBoasVindas = "Boas Vindas ao Screen Sound";
 List<String> bandas = new List<string>();
 List<int> notaBanda = new List<int>(); 
 
+
 void ExibirLogo() {
     //verbatim literal '@'
     Console.WriteLine(@"
@@ -52,14 +53,14 @@ ExibirMenu();
 
 void RegistrarBanda() {
 
-    ////Console.Clear();
+    Console.Clear();
     Console.WriteLine("Registro de Bandas");
     Console.Write("Digite o nome da banda que deseja registrar: ");
     String nomeDaBanda = Console.ReadLine()!;
     bandas.Add(nomeDaBanda);
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
     Thread.Sleep(2000);
-    ////Console.Clear();
+    Console.Clear();
     ExibirMenu();
 }
 
@@ -87,14 +88,17 @@ void AvaliarBanda() {
 
     for(int i = 0; i < bandas.Count; i++) {
         if(avaliarBanda.Equals(bandas[i])) {           
-            int nota = Console.Read();
-            notaBanda.Insert(i, nota);
+            string nota = Console.ReadLine()!;
+            notaBanda.Insert(i, int.Parse(nota));
             Console.WriteLine($"A banda {bandas[i]} recebeu a nota {notaBanda[i]}!");
             Console.WriteLine(notaBanda[i]);
         }
     }
     
 }
+
+
+
 void ExibirMedia() {
 
 }
