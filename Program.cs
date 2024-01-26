@@ -54,7 +54,7 @@ ExibirMenu();
 void RegistrarBanda() {
 
     Console.Clear();
-    Console.WriteLine("Registro de Bandas");
+    ExibirTituloDaOpcao("Registrar Bandas");
     Console.Write("Digite o nome da banda que deseja registrar: ");
     String nomeDaBanda = Console.ReadLine()!;
     bandas.Add(nomeDaBanda);
@@ -65,21 +65,31 @@ void RegistrarBanda() {
 }
 
 void MostrarBanda() {
-    //Console.Clear();
-    Console.WriteLine("Bandas");
+    Console.Clear();
+    ExibirTituloDaOpcao("Bandas Registradas");
     foreach(string banda in bandas) {
         Console.WriteLine($"{banda}");
     }
     Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
     Console.ReadKey();
-    //Console.Clear();
+    Console.Clear();
     ExibirMenu();
 
 }
 
+void ExibirTituloDaOpcao(string titulo) {
+
+    int quantidadeDeLetras = titulo.Length;
+    string asterisco = string.Empty.PadRight(quantidadeDeLetras, '*');
+    Console.WriteLine(asterisco);
+    Console.WriteLine(titulo);
+    Console.WriteLine($"{asterisco}\n");
+
+}
+
 void AvaliarBanda() {
-    //Console.Clear();
-    Console.WriteLine("Avaliar Banda");
+    Console.Clear();
+    ExibirTituloDaOpcao("Avaliar Banda");
     Console.Write("\nQual banda você quer avaliar?");
 
     
@@ -87,11 +97,11 @@ void AvaliarBanda() {
 
 
     for(int i = 0; i < bandas.Count; i++) {
-        if(avaliarBanda.Equals(bandas[i])) {           
+        if(avaliarBanda.Equals(bandas[i])) {  
+            Console.WriteLine($"Digite uma nota para {avaliarBanda}: ");         
             string nota = Console.ReadLine()!;
             notaBanda.Insert(i, int.Parse(nota));
-            Console.WriteLine($"A banda {bandas[i]} recebeu a nota {notaBanda[i]}!");
-            Console.WriteLine(notaBanda[i]);
+            Console.WriteLine($"\nA banda {bandas[i]} recebeu a nota {notaBanda[i]}!");
         }
     }
     
